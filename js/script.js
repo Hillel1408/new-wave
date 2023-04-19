@@ -18,7 +18,6 @@ const certificatesSwiper = new Swiper('.slider__container', {
     slidesPerView: 1,
     spaceBetween: 30,
     loop: true,
-    freeMode: true,
     spaceBetween: 88,
     initialSlide: 2,
     breakpoints: {

@@ -391,9 +391,9 @@ body.lock {
   position: relative;
   max-width: 940px;
   margin: 0 auto;
-  -webkit-transform: translateX(-65px);
-      -ms-transform: translateX(-65px);
-          transform: translateX(-65px);
+  -webkit-transform: translateX(-50px);
+      -ms-transform: translateX(-50px);
+          transform: translateX(-50px);
 }
 @media (max-width: 1160px) {
   .slider__container {
@@ -411,9 +411,9 @@ body.lock {
         -ms-flex-pack: center;
             justify-content: center;
     margin-top: 60px;
-    -webkit-transform: translateX(65px);
-        -ms-transform: translateX(65px);
-            transform: translateX(65px);
+    -webkit-transform: translateX(50px);
+        -ms-transform: translateX(50px);
+            transform: translateX(50px);
   }
 }
 @media (max-width: 1160px) {
@@ -479,7 +479,7 @@ body.lock {
   }
 }
 .slider .slider__swiper-button-next {
-  right: -260px;
+  right: -215px;
 }
 @media (max-width: 1370px) {
   .slider .slider__swiper-button-next {
