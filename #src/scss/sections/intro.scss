@@ -17,15 +17,25 @@
         right: 0;
         justify-content: center;
         padding-right: 210px;
+        @media (max-width: (1040px)) {
+            flex-direction: column;
+            align-items: center;
+            padding-right: 0;
+            bottom: 60px;
+        }
     }
     &__title {
         max-width: 498px;
         font-weight: 700;
         font-size: 66px;
-        line-height: 79px;
+        line-height: 79 / 66 * 100%;
         text-transform: uppercase;
         color: #000000;
         text-align: right;
+        @media (max-width: (1040px)) {
+            text-align: center;
+            font-size: 36px;
+        }
     }
     &__btn {
         width: 280px;
@@ -37,20 +47,22 @@
         text-transform: uppercase;
         color: #ffffff;
         margin-top: 80px;
-    }
-    .swiper-wrapper {
-        display: flex;
-    }
-    .swiper-slide {
-        flex: 0 0 auto;
-        position: relative;
+        @media (max-width: (1040px)) {
+            margin-top: 30px;
+        }
     }
     .swiper-pagination {
         display: flex;
+        justify-content: end;
         gap: 10px;
         position: absolute;
-        right: 99px;
-        bottom: 40px;
+        padding-right: 99px;
+        bottom: 40px !important;
+        @media (max-width: (1040px)) {
+            padding-right: 0;
+            justify-content: center;
+            bottom: 20px !important;
+        }
         &-bullet {
             width: 10px;
             height: 10px;

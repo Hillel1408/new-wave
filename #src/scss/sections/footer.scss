@@ -5,9 +5,18 @@
     &__logo {
         margin-bottom: 40px;
     }
+    &__flex2 {
+        @media (max-width: (620px)) {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    }
     &__container {
         display: flex;
         justify-content: space-between;
+        @media (max-width: (830px)) {
+            flex-direction: column;
+        }
     }
     &__title {
         font-weight: 600;
@@ -37,6 +46,10 @@
     &__flex {
         display: flex;
         gap: 64px;
+        @media (max-width: (620px)) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
     &__input {
         background: #efefef;

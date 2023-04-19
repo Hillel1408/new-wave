@@ -1,6 +1,8 @@
 .reviews {
     padding-top: 128px;
-
+    @media (max-width: (500px)) {
+        padding-top: 0;
+    }
     &__title {
         font-weight: 600;
         font-size: 32px;
@@ -8,6 +10,9 @@
         text-transform: uppercase;
         color: #000000;
         margin-bottom: 60px;
+        @media (max-width: (1260px)) {
+            padding: 0 15px;
+        }
     }
     &__item {
         background: #efefef;
@@ -78,6 +83,11 @@
     &__container {
         overflow: hidden;
         padding-bottom: 267px;
+        padding-left: 0;
+        padding-right: 0;
+        @media (max-width: (500px)) {
+            padding-bottom: 97px;
+        }
     }
     &__swiper {
         position: relative;
@@ -86,18 +96,19 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 40px;
-    }
-    .swiper-wrapper {
-        display: flex;
-    }
-    .swiper-slide {
         flex: 0 0 auto;
+        @media (max-width: (840px)) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @media (max-width: (520px)) {
+            grid-template-columns: 1fr;
+        }
     }
     .swiper-pagination {
         display: flex;
         gap: 10px;
         position: absolute;
-        bottom: -40px;
+        bottom: -40px !important;
         left: 0;
         right: 0;
         justify-content: center;
