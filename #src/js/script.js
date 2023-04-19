@@ -5,3 +5,11 @@ const swiper = new Swiper('.intro', {
         clickable: true,
     },
 });
+
+const reviewsSwiper = new Swiper('.reviews__swiper', {
+    direction: 'horizontal',
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+});

@@ -1,0 +1,116 @@
+.reviews {
+    padding-top: 128px;
+
+    &__title {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 38px;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 60px;
+    }
+    &__item {
+        background: #efefef;
+        padding: 31px 44px 40px 44px;
+        text-align: center;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -20px;
+            border: 10px solid transparent;
+            border-top: 10px solid #efefef;
+        }
+        &-title {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 32px;
+            color: #000000;
+            margin-bottom: 8px;
+        }
+        &-text {
+            font-size: 14px;
+            line-height: 24px;
+            color: #868686;
+        }
+        &-stars {
+            display: flex;
+            gap: 4px;
+            svg.active {
+                path {
+                    fill: black;
+                    stroke: black;
+                }
+            }
+            &-wrapper {
+                margin-bottom: 33px;
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                justify-content: center;
+            }
+        }
+        &-block {
+            margin-top: 40px;
+            text-align: center;
+            span {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 28px;
+                color: black;
+            }
+        }
+        &-avatar {
+            margin: 0 auto;
+            margin-bottom: 8px;
+            width: 56px;
+            border-radius: 50%;
+            overflow: hidden;
+            img {
+                height: 56px;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    &__container {
+        overflow: hidden;
+        padding-bottom: 267px;
+    }
+    &__swiper {
+        position: relative;
+    }
+    .swiper-slide {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+    }
+    .swiper-wrapper {
+        display: flex;
+    }
+    .swiper-slide {
+        flex: 0 0 auto;
+    }
+    .swiper-pagination {
+        display: flex;
+        gap: 10px;
+        position: absolute;
+        bottom: -40px;
+        left: 0;
+        right: 0;
+        justify-content: center;
+        &-bullet {
+            width: 10px;
+            height: 10px;
+            display: block;
+            border: 1px solid #000000;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+        &-bullet-active {
+            background: #000000;
+        }
+    }
+}
