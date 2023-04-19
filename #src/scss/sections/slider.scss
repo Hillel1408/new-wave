@@ -11,7 +11,7 @@
         position: relative;
         max-width: 940px;
         margin: 0 auto;
-        transform: translateX(-65px);
+        transform: translateX(-50px);
         @media (max-width: (1160px)) {
             transform: translateX(0);
         }
@@ -21,7 +21,7 @@
             display: flex;
             justify-content: center;
             margin-top: 60px;
-            transform: translateX(65px);
+            transform: translateX(50px);
         }
         @media (max-width: (1160px)) {
             transform: translateX(0);
@@ -76,7 +76,7 @@
         }
     }
     .slider__swiper-button-next {
-        right: -260px;
+        right: -215px;
         @media (max-width: (1370px)) {
             position: initial;
         }
